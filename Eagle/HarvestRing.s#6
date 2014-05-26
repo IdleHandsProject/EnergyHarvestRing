@@ -1497,7 +1497,7 @@ at 12.06.2012 10:18:08</description>
 <instance part="C5" gate="G$1" x="106.68" y="53.34"/>
 <instance part="GND6" gate="1" x="106.68" y="40.64"/>
 <instance part="LED1" gate="G$1" x="101.6" y="10.16"/>
-<instance part="QN1" gate="G$1" x="88.9" y="0"/>
+<instance part="QN1" gate="G$1" x="86.36" y="0"/>
 <instance part="GND7" gate="1" x="104.14" y="-30.48"/>
 <instance part="C6" gate="G$1" x="116.84" y="-5.08"/>
 </instances>
@@ -1589,7 +1589,7 @@ at 12.06.2012 10:18:08</description>
 </segment>
 <segment>
 <pinref part="QN1" gate="G$1" pin="E"/>
-<wire x1="99.06" y1="-15.24" x2="104.14" y2="-15.24" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="-15.24" x2="104.14" y2="-15.24" width="0.1524" layer="91"/>
 <wire x1="104.14" y1="-15.24" x2="104.14" y2="-27.94" width="0.1524" layer="91"/>
 <pinref part="GND7" gate="1" pin="GND"/>
 <pinref part="C6" gate="G$1" pin="-"/>
@@ -1607,6 +1607,7 @@ at 12.06.2012 10:18:08</description>
 <segment>
 <pinref part="U1" gate="A" pin="SW"/>
 <wire x1="50.8" y1="55.88" x2="45.72" y2="55.88" width="0.1524" layer="91"/>
+<label x="45.72" y="55.88" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -1632,8 +1633,13 @@ at 12.06.2012 10:18:08</description>
 <wire x1="116.84" y1="88.9" x2="116.84" y2="73.66" width="0.1524" layer="91"/>
 <pinref part="U1" gate="A" pin="VAUX"/>
 <wire x1="116.84" y1="73.66" x2="116.84" y2="71.12" width="0.1524" layer="91"/>
-<wire x1="96.52" y1="73.66" x2="116.84" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="73.66" x2="104.14" y2="73.66" width="0.1524" layer="91"/>
 <junction x="116.84" y="73.66"/>
+<pinref part="U1" gate="A" pin="VLDO"/>
+<wire x1="104.14" y1="73.66" x2="116.84" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="63.5" x2="104.14" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="104.14" y1="63.5" x2="104.14" y2="73.66" width="0.1524" layer="91"/>
+<junction x="104.14" y="73.66"/>
 </segment>
 </net>
 <net name="N$8" class="0">
@@ -1647,8 +1653,13 @@ at 12.06.2012 10:18:08</description>
 <net name="LED" class="0">
 <segment>
 <pinref part="U1" gate="A" pin="VOUT"/>
-<wire x1="96.52" y1="68.58" x2="101.6" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="68.58" x2="99.06" y2="68.58" width="0.1524" layer="91"/>
 <label x="96.52" y="68.58" size="1.778" layer="95"/>
+<wire x1="99.06" y1="68.58" x2="101.6" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="66.04" x2="99.06" y2="68.58" width="0.1524" layer="91"/>
+<junction x="99.06" y="68.58"/>
+<pinref part="U1" gate="A" pin="VOUT2"/>
+<wire x1="96.52" y1="66.04" x2="99.06" y2="66.04" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="LED1" gate="G$1" pin="A"/>
@@ -1666,7 +1677,7 @@ at 12.06.2012 10:18:08</description>
 <pinref part="LED1" gate="G$1" pin="C"/>
 <wire x1="101.6" y1="5.08" x2="101.6" y2="0" width="0.1524" layer="91"/>
 <pinref part="QN1" gate="G$1" pin="C"/>
-<wire x1="101.6" y1="0" x2="99.06" y2="0" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="0" x2="96.52" y2="0" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="PGD" class="0">
@@ -1676,7 +1687,7 @@ at 12.06.2012 10:18:08</description>
 </segment>
 <segment>
 <pinref part="QN1" gate="G$1" pin="B"/>
-<wire x1="88.9" y1="-7.62" x2="78.74" y2="-7.62" width="0.1524" layer="91"/>
+<wire x1="86.36" y1="-7.62" x2="78.74" y2="-7.62" width="0.1524" layer="91"/>
 <label x="78.74" y="-7.62" size="1.778" layer="95"/>
 </segment>
 </net>
